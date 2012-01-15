@@ -5,7 +5,7 @@
 // @author         Z4ppy
 // @include        http://what.cd/*
 // @include        https://ssl.what.cd/*
-// @updateURL      http://userscripts.org/scripts/source/123195.meta.js
+// @updateURL      http://userscripts.org/scripts/source/123202.user.js
 // @version        1.0
 // @date           2012-01-15
 // ==/UserScript==
