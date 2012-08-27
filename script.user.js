@@ -6,7 +6,7 @@
 // @include        https://what.cd/*
 // @include        https://ssl.what.cd/*
 // @updateURL      http://userscripts.org/scripts/source/123195.meta.js
-// @version        1.0
+// @version        1.0.1
 // @date           2012-08-27
 // ==/UserScript==
 
