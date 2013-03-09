@@ -5,22 +5,18 @@
 // @author         Z4ppy
 // @include        https://what.cd/*
 // @include        https://ssl.what.cd/*
-// @updateURL      http://userscripts.org/scripts/source/123195.meta.js
-// @version        1.0.1
-// @date           2012-08-27
+// @grant          none
+// @version        1.1
+// @date           2013-03-09
 // ==/UserScript==
 
 /*
 Changelog:
 1.0    2012-01-15  Initial version
 1.0.1  2012-08-27  Fix @include for https://what.cd
+1.1    2013-03-09  Rewritten
 */
 
-(function() {
-	var forms = document.getElementsByTagName('form');
-	for(var i = 0; i < forms.length; i++) {
-		if(forms[i].parentNode.parentNode.parentNode.id == 'searchbars') {
-			forms[i].target = '_blank';
-		}
-	}
-})();
+NodeList.prototype.forEach = Array.prototype.forEach;
+var forms = document.querySelectorAll('#searchbars form');
+forms.forEach(function(e) { e.target = '_blank' });
